@@ -1,5 +1,7 @@
 <?php
 
-$app->get('/home', function ($req, $resp) {
-    return 'Home';
-});
+$app->get('/', 'HomeController:index')->setName('home');
+
+$app->post('/key-search', 'SearchController:findbyKeyWords')->setName('key_search');
+
+$app->get('/show', 'TextController:findbyID');
