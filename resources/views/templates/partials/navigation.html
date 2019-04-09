@@ -16,7 +16,7 @@
             <li class="nav-item active"><a class="nav-link" href="#">Вход</a></li>
         </ul>
   
-        <form  action="{{ path_for('key_search') }}"  method="POST" class="form-inline my-2 my-lg-0">
+        <form  action="{{ path_for('key_search') }}"  method="GET" class="form-inline my-2 my-lg-0">
             <input  name="keywords" class="form-control mr-sm-2" type="text" placeholder="Поиск" aria-label="Search">
             <button class="btn btn-secondary my-2 my-sm-0" type="submit"><i class="fa fa-search fa-fw"></i></button>
         </form>
