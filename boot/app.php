@@ -33,6 +33,10 @@ $container['view'] = function ($container) {
     return $view;
 };
 
+$container['validator'] = function ($container) {
+	return new App\Validation\Validator;
+};
+
 $container['HomeController'] = function ($container) {
     return new \App\Controllers\HomeController($container);
 };
@@ -45,6 +49,11 @@ $container['TextController'] = function ($container) {
     return new \App\Controllers\TextController($container);
 };
 
+$container['AuthController'] = function ($container) {
+    return new \App\Controllers\AuthController($container);
+};
+
+
 $container["Users"] = function ($container) {
     $db = $container['settings']['db'];
     return new \App\Models\User($db->Users);
@@ -54,5 +63,7 @@ $container["Texts"] = function ($container) {
     $db = $container['settings']['db'];
     return new \App\Models\Text($db->Texts);
 };
+
+$app->add(new \App\Middelwares\ValidationErrorsMiddelware($container));
 
 require __DIR__ . '/../app/routes.php';
