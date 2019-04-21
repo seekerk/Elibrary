@@ -13,7 +13,8 @@
                         {% endif %}
                         <form class="form" role="form" autocomplete="off" id="formLogin" novalidate="" method="POST" action="{{ path_for('auth.signup') }}">
                             <div class="form-group  ">
-                                <input class="form-control input-lg {{ errors.email ? 'is-invalid' : ''}}" placeholder="E-mail" name="email" type="text">
+                                <label for="email">Email</label>
+                                <input class="form-control input-lg {{ errors.email ? 'is-invalid' : ''}}" id="email" placeholder="E-mail" name="email" type="text">
                                 {% if errors.email %}
                                     <div class="invalid-feedback">
                                         {{ errors.email | first }}
@@ -21,7 +22,8 @@
                                 {% endif %}
                             </div>
                             <div class="form-group">
-                                <input class="form-control input-lg {{ errors.name ? 'is-invalid' : ''}}" placeholder="Имя" name="name" type="text">
+                                <label for="name">Имя пользователя</label>
+                                <input class="form-control input-lg {{ errors.name ? 'is-invalid' : ''}}" id="name"  placeholder="Имя" name="name" type="text">
                                 {% if errors.name %}
                                     <div class="invalid-feedback">
                                     {{ errors.name | first }}
@@ -29,7 +31,8 @@
                                 {% endif %}
                             </div>
                             <div class="form-group">
-                                <input class="form-control input-lg {{ errors.password ? 'is-invalid' : ''}}" placeholder="Пароль" name="password" value="" type="password">
+                                <label for="password">Пароль</label>
+                                <input class="form-control input-lg {{ errors.password ? 'is-invalid' : ''}}" id="password"  placeholder="Пароль" name="password" value="" type="password">
                                 {% if errors.password %}
                                     <div class="invalid-feedback">
                                         {{ errors.password | first }}
@@ -37,7 +40,8 @@
                                 {% endif %}
                             </div>
                             <div class="form-group">
-                                <input class="form-control input-lg {{ errors.confirmation ? 'is-invalid' : ''}}" placeholder="Подтверждение пароля" name="confirmation" value="" type="password">
+                                <label for="confirmation">Подтверждение пароля</label>
+                                <input class="form-control input-lg {{ errors.confirmation ? 'is-invalid' : ''}}" placeholder="Подтверждение пароля" id="confirmation" name="confirmation" value="" type="password">
                                 {% if errors.confirmation%}
                                     <div class="invalid-feedback">
                                         {{ errors.confirmation}}

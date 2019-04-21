@@ -32,7 +32,8 @@
         "citation-style-language/styles-distribution":"@dev",
         "seboettg/citeproc-php": "^2",
 	    	    "voku/simple_html_dom": "^4.3",
-	    	    "slim/twig-view": "^2.4"
+	    	    "slim/twig-view": "^2.4",
+	    	    "respect/validation": "^1.1"
     },
     "autoload": {
         "psr-4": {
