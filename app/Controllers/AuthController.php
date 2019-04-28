@@ -7,9 +7,9 @@ use Respect\Validation\Validator as v;
 
 class AuthController extends BaseController
 {
-	public function getSignUp($req, $resp)
-	{
-		return $this->view->render($resp, 'signup.html');
+    public function getSignUp($req, $resp)
+    {
+        return $this->view->render($resp, 'signup.html');
     }
 
     public function postSignUp($req, $resp)
@@ -24,7 +24,7 @@ class AuthController extends BaseController
             return $resp->withRedirect($this->router->pathFor('auth.signup'));
         }
         //потом мб разберусь как кастомное правило делать
-        if ( strcmp($req->getParam('password'), $req->getParam('confirmation')) !== 0) {
+        if (strcmp($req->getParam('password'), $req->getParam('confirmation')) !== 0) {
             $_SESSION['errors']['confirmation'] =  'Введенные пароли не совпадают!';
             return $resp->withRedirect($this->router->pathFor('auth.signup'));
         }
@@ -35,13 +35,13 @@ class AuthController extends BaseController
             'password' => password_hash($req->getParam('password'), PASSWORD_DEFAULT),
         ];
 
-        if ($this->Users->exist($user)) {
+        if (User::exist($user)) {
             $_SESSION['errors']['global'] = 'Пользователь с такими данными уже существует!';
             return $resp->withRedirect($this->router->pathFor('auth.signup'));
         }
 
-        $this->Users->create($user);
+        User::create($user);
 
-       return $resp->withRedirect($this->router->pathFor('home'));
+        return $resp->withRedirect($this->router->pathFor('home'));
     }
 }

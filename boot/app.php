@@ -5,8 +5,9 @@ session_start();
 require __DIR__ . "/../vendor/autoload.php";
 
 $client = new MongoDB\Client(
-    'mongodb+srv://admin:elibrary1234@cluster0-sndra.mongodb.net/test?retryWrites=true');
-  
+    'mongodb+srv://admin:elibrary1234@cluster0-sndra.mongodb.net/test?retryWrites=true'
+);
+
 $db = $client->Elibrary;
 
 $app = new \Slim\App([
@@ -24,17 +25,17 @@ $container['view'] = function ($container) {
         'cache' => false,
     ]);
 
-	$view->addExtension(new Slim\Views\TwigExtension(
-		$container->router, 
+    $view->addExtension(new Slim\Views\TwigExtension(
+        $container->router,
         $container->request->getUri(),
-        
+
     ));
-    
+
     return $view;
 };
 
 $container['validator'] = function ($container) {
-	return new App\Validation\Validator;
+    return new App\Validation\Validator;
 };
 
 $container['HomeController'] = function ($container) {
@@ -53,17 +54,10 @@ $container['AuthController'] = function ($container) {
     return new \App\Controllers\AuthController($container);
 };
 
+\App\Models\User::init($db->Users);
+\App\Models\Text::init($db->Texts);
 
-$container["Users"] = function ($container) {
-    $db = $container['settings']['db'];
-    return new \App\Models\User($db->Users);
-};
-
-$container["Texts"] = function ($container) {
-    $db = $container['settings']['db'];
-    return new \App\Models\Text($db->Texts);
-};
-
-$app->add(new \App\Middelwares\ValidationErrorsMiddelware($container));
+$app->add(new \App\Middlewares\ValidationErrorsMiddleware($container));
+$app->add(new \App\Middlewares\OldInputMiddleware($container));
 
 require __DIR__ . '/../app/routes.php';

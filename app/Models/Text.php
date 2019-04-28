@@ -4,9 +4,16 @@ namespace App\Models;
 
 use MongoDB\BSON\ObjectId;
 
-class Text extends BaseModel
+class Text
 {
-    public function findbyKeyWords($keywords)
+    static private $collection;
+
+    static public function init($collection)
+    {
+        self::$collection = $collection;
+    }
+
+    public static function findbyKeyWords($keywords)
     {
         $filter = [
             '$text' => [
@@ -15,7 +22,7 @@ class Text extends BaseModel
         ];
 
         $options = [
-            'projection' => [         
+            'projection' => [
                 'meta.title' => 1,
                 'meta.author' => 1,
                 'bibl' => 1,
@@ -31,12 +38,12 @@ class Text extends BaseModel
             ],
         ];
 
-        $res = $this->findTexts($filter, $options);
+        $res = self::findTexts($filter, $options);
 
         return $res;
     }
 
-    public function findbyID($id)
+    public static function findbyID($id)
     {
         $filter = [
             '_id' => new ObjectId($id)
@@ -48,16 +55,16 @@ class Text extends BaseModel
             ]
         ];
 
-        $text = $this->collection->findOne($filter, $options)["text"];
-        
+        $text = self::$collection->findOne($filter, $options)["text"];
+
         return $text;
     }
 
-    private function findTexts($filter, $options)
+    private static function findTexts($filter, $options)
     {
         $res = [];
 
-        $cursor = $this->collection->find($filter, $options);
+        $cursor = self::$collection->find($filter, $options);
 
         foreach ($cursor as $text) {
             $res[] = [

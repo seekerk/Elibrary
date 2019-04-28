@@ -2,14 +2,21 @@
 
 namespace App\Models;
 
-class User extends BaseModel
+class User
 {
-    public function create($user)
+    static private $collection;
+
+    public static function init($collection)
     {
-        $this->collection->insertOne($user);
+        self::$collection = $collection;
     }
 
-    public function exist($user)
+    public static function create($user)
+    {
+        self::$collection->insertOne($user);
+    }
+
+    public static function exist($user)
     {
         $filter = [
             '$or' => [
@@ -17,7 +24,8 @@ class User extends BaseModel
                 ['email' => $user['email']]
             ]
         ];
-        $user = $this->collection->findOne($filter);
+        $user = self::$collection->findOne($filter);
+
         return !empty($user);
     }
 }
