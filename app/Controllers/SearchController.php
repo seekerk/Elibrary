@@ -8,7 +8,7 @@ class SearchController extends BaseController
 {
     public function findbyKeyWords($req, $resp)
     {
-        $keywords = htmlEntities($req->getParam('keywords'), ENT_QUOTES);
+        $keywords = $req->getParam('keywords');
         $keywords = preg_replace('/\w{,3}|[a-zA-Z]{2,}/', "", $keywords);
 
         $texts = Text::findbyKeyWords($keywords);
