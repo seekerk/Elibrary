@@ -33,7 +33,8 @@
         "seboettg/citeproc-php": "^2",
 	    	    "voku/simple_html_dom": "^4.3",
 	    	    "slim/twig-view": "^2.4",
-	    	    "respect/validation": "^1.1"
+	    	    "respect/validation": "^1.1",
+	    	    "slim/flash": "^0.4.0"
     },
     "autoload": {
         "psr-4": {
