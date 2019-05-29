@@ -4,38 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "34e82cf6e44ee01c3e0bbef8d2245d1f",
+    "content-hash": "8c0dc0051b176990459243da7f211d04",
     "packages": [
-        {
-            "name": "camspiers/porter-stemmer",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/camspiers/porter-stemmer.git",
-                "reference": "588088e9aaa6d81d711098cf60af2ef18b1a5798"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/camspiers/porter-stemmer/zipball/588088e9aaa6d81d711098cf60af2ef18b1a5798",
-                "reference": "588088e9aaa6d81d711098cf60af2ef18b1a5798",
-                "shasum": ""
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "src/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "authors": [
-                {
-                    "name": "Richard Heyes",
-                    "email": "support@rgraph.net"
-                }
-            ],
-            "description": "Porter Stemmer created by Richard Heyes",
-            "time": "2013-02-06T21:39:08+00:00"
-        },
         {
             "name": "citation-style-language/locales",
             "version": "1.0.0",
@@ -86,62 +56,6 @@
             "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
             "homepage": "https://github.com/container-interop/container-interop",
             "time": "2017-02-14T19:40:03+00:00"
-        },
-        {
-            "name": "donatello-za/rake-php-plus",
-            "version": "v1.0.9",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Donatello-za/rake-php-plus.git",
-                "reference": "6c759ee063cb29edabee1ed75fc9ffa8752795fc"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Donatello-za/rake-php-plus/zipball/6c759ee063cb29edabee1ed75fc9ffa8752795fc",
-                "reference": "6c759ee063cb29edabee1ed75fc9ffa8752795fc",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "ext-mbstring": "*",
-                "php": ">=5.4.0"
-            },
-            "require-dev": {
-                "php": ">=5.5.0",
-                "phpunit/phpunit": "~4.0|~5.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.9-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "DonatelloZa\\RakePlus\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Don Schoeman",
-                    "email": "ta.maximus@gmail.com"
-                }
-            ],
-            "description": "Yet another PHP implementation of the Rapid Automatic Keyword Extraction algorithm (RAKE).",
-            "homepage": "https://github.com/Donatello-za/rake-php-plus",
-            "keywords": [
-                "Algorithm",
-                "automatic",
-                "extraction",
-                "keyword",
-                "rake",
-                "rapid"
-            ],
-            "time": "2019-03-01T09:26:46+00:00"
         },
         {
             "name": "mongodb/mongodb",
@@ -210,21 +124,21 @@
         },
         {
             "name": "myclabs/php-enum",
-            "version": "1.6.6",
+            "version": "1.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/php-enum.git",
-                "reference": "32c4202886c51fbe5cc3a7c34ec5c9a4a790345e"
+                "reference": "f46847626b8739de22e4ebc6b56010f317d4448d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/php-enum/zipball/32c4202886c51fbe5cc3a7c34ec5c9a4a790345e",
-                "reference": "32c4202886c51fbe5cc3a7c34ec5c9a4a790345e",
+                "url": "https://api.github.com/repos/myclabs/php-enum/zipball/f46847626b8739de22e4ebc6b56010f317d4448d",
+                "reference": "f46847626b8739de22e4ebc6b56010f317d4448d",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-                "php": ">=5.4"
+                "php": ">=7.1"
             },
             "require-dev": {
                 "phpunit/phpunit": "^4.8.35|^5.7|^6.0",
@@ -251,7 +165,7 @@
             "keywords": [
                 "enum"
             ],
-            "time": "2019-02-04T21:18:49+00:00"
+            "time": "2019-05-05T10:12:03+00:00"
         },
         {
             "name": "nikic/fast-route",
@@ -450,16 +364,16 @@
         },
         {
             "name": "respect/validation",
-            "version": "1.1.30",
+            "version": "1.1.31",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Respect/Validation.git",
-                "reference": "9bafee191d9c560827105a849e2b29d8446f0f6f"
+                "reference": "45d109fc830644fecc1145200d6351ce4f2769d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Respect/Validation/zipball/9bafee191d9c560827105a849e2b29d8446f0f6f",
-                "reference": "9bafee191d9c560827105a849e2b29d8446f0f6f",
+                "url": "https://api.github.com/repos/Respect/Validation/zipball/45d109fc830644fecc1145200d6351ce4f2769d0",
+                "reference": "45d109fc830644fecc1145200d6351ce4f2769d0",
                 "shasum": ""
             },
             "require": {
@@ -509,7 +423,7 @@
                 "validation",
                 "validator"
             ],
-            "time": "2019-03-31T13:27:49+00:00"
+            "time": "2019-05-28T06:10:06+00:00"
         },
         {
             "name": "seboettg/citeproc-php",
@@ -595,17 +509,65 @@
             "time": "2019-02-13T07:13:15+00:00"
         },
         {
-            "name": "slim/slim",
-            "version": "3.12.0",
+            "name": "slim/flash",
+            "version": "0.4.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/slimphp/Slim.git",
-                "reference": "f4947cc900b6e51cbfda58b9f1247bca2f76f9f0"
+                "url": "https://github.com/slimphp/Slim-Flash.git",
+                "reference": "9aaff5fded3b54f4e519ec3d4ac74d3d1f2cbbbc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/slimphp/Slim/zipball/f4947cc900b6e51cbfda58b9f1247bca2f76f9f0",
-                "reference": "f4947cc900b6e51cbfda58b9f1247bca2f76f9f0",
+                "url": "https://api.github.com/repos/slimphp/Slim-Flash/zipball/9aaff5fded3b54f4e519ec3d4ac74d3d1f2cbbbc",
+                "reference": "9aaff5fded3b54f4e519ec3d4ac74d3d1f2cbbbc",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Slim\\Flash\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Josh Lockhart",
+                    "email": "hello@joshlockhart.com",
+                    "homepage": "http://joshlockhart.com"
+                }
+            ],
+            "description": "Slim Framework Flash message service provider",
+            "homepage": "http://slimframework.com",
+            "keywords": [
+                "flash",
+                "framework",
+                "message",
+                "provider",
+                "slim"
+            ],
+            "time": "2017-10-22T10:35:05+00:00"
+        },
+        {
+            "name": "slim/slim",
+            "version": "3.12.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/slimphp/Slim.git",
+                "reference": "eaee12ef8d0750db62b8c548016d82fb33addb6b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/slimphp/Slim/zipball/eaee12ef8d0750db62b8c548016d82fb33addb6b",
+                "reference": "eaee12ef8d0750db62b8c548016d82fb33addb6b",
                 "shasum": ""
             },
             "require": {
@@ -663,26 +625,26 @@
                 "micro",
                 "router"
             ],
-            "time": "2019-01-15T13:21:25+00:00"
+            "time": "2019-04-16T16:47:29+00:00"
         },
         {
             "name": "slim/twig-view",
-            "version": "2.4.0",
+            "version": "2.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/slimphp/Twig-View.git",
-                "reference": "78386c01a97f7870462b38fff759dad649da9efc"
+                "reference": "06ef39b58d60b11a9546893fd0b7fff2bd901798"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/slimphp/Twig-View/zipball/78386c01a97f7870462b38fff759dad649da9efc",
-                "reference": "78386c01a97f7870462b38fff759dad649da9efc",
+                "url": "https://api.github.com/repos/slimphp/Twig-View/zipball/06ef39b58d60b11a9546893fd0b7fff2bd901798",
+                "reference": "06ef39b58d60b11a9546893fd0b7fff2bd901798",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.5.0",
                 "psr/http-message": "^1.0",
-                "twig/twig": "^1.18|^2.0"
+                "twig/twig": "^1.38|^2.7"
             },
             "require-dev": {
                 "phpunit/phpunit": "^4.8|^5.7",
@@ -714,199 +676,11 @@
                 "twig",
                 "view"
             ],
-            "time": "2018-05-07T10:54:29+00:00"
-        },
-        {
-            "name": "sunra/php-simple-html-dom-parser",
-            "version": "v1.5.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sunra/php-simple-html-dom-parser.git",
-                "reference": "75b9b1cb64502d8f8c04dc11b5906b969af247c6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sunra/php-simple-html-dom-parser/zipball/75b9b1cb64502d8f8c04dc11b5906b969af247c6",
-                "reference": "75b9b1cb64502d8f8c04dc11b5906b969af247c6",
-                "shasum": ""
-            },
-            "require": {
-                "ext-mbstring": "*",
-                "php": ">=5.3.2"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Sunra\\PhpSimple\\HtmlDomParser": "Src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Sunra",
-                    "email": "sunra@yandex.ru",
-                    "homepage": "https://github.com/sunra"
-                },
-                {
-                    "name": "S.C. Chen",
-                    "homepage": "http://sourceforge.net/projects/simplehtmldom/"
-                }
-            ],
-            "description": "Composer adaptation of: A HTML DOM parser written in PHP5+ let you manipulate HTML in a very easy way! Require PHP 5+. Supports invalid HTML. Find tags on an HTML page with selectors just like jQuery. Extract contents from HTML in a single line.",
-            "homepage": "https://github.com/sunra/php-simple-html-dom-parser",
-            "keywords": [
-                "dom",
-                "html",
-                "parser"
-            ],
-            "time": "2016-11-22T22:57:47+00:00"
-        },
-        {
-            "name": "symfony/console",
-            "version": "v4.2.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/console.git",
-                "reference": "9dc2299a016497f9ee620be94524e6c0af0280a9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/9dc2299a016497f9ee620be94524e6c0af0280a9",
-                "reference": "9dc2299a016497f9ee620be94524e6c0af0280a9",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1.3",
-                "symfony/contracts": "^1.0",
-                "symfony/polyfill-mbstring": "~1.0"
-            },
-            "conflict": {
-                "symfony/dependency-injection": "<3.4",
-                "symfony/process": "<3.3"
-            },
-            "provide": {
-                "psr/log-implementation": "1.0"
-            },
-            "require-dev": {
-                "psr/log": "~1.0",
-                "symfony/config": "~3.4|~4.0",
-                "symfony/dependency-injection": "~3.4|~4.0",
-                "symfony/event-dispatcher": "~3.4|~4.0",
-                "symfony/lock": "~3.4|~4.0",
-                "symfony/process": "~3.4|~4.0"
-            },
-            "suggest": {
-                "psr/log": "For using the console logger",
-                "symfony/event-dispatcher": "",
-                "symfony/lock": "",
-                "symfony/process": ""
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.2-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Console\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony Console Component",
-            "homepage": "https://symfony.com",
-            "time": "2019-02-23T15:17:42+00:00"
-        },
-        {
-            "name": "symfony/contracts",
-            "version": "v1.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/contracts.git",
-                "reference": "1aa7ab2429c3d594dd70689604b5cf7421254cdf"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/contracts/zipball/1aa7ab2429c3d594dd70689604b5cf7421254cdf",
-                "reference": "1aa7ab2429c3d594dd70689604b5cf7421254cdf",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1.3"
-            },
-            "require-dev": {
-                "psr/cache": "^1.0",
-                "psr/container": "^1.0"
-            },
-            "suggest": {
-                "psr/cache": "When using the Cache contracts",
-                "psr/container": "When using the Service contracts",
-                "symfony/cache-contracts-implementation": "",
-                "symfony/service-contracts-implementation": "",
-                "symfony/translation-contracts-implementation": ""
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Contracts\\": ""
-                },
-                "exclude-from-classmap": [
-                    "**/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "A set of abstractions extracted out of the Symfony components",
-            "homepage": "https://symfony.com",
-            "keywords": [
-                "abstractions",
-                "contracts",
-                "decoupling",
-                "interfaces",
-                "interoperability",
-                "standards"
-            ],
-            "time": "2018-12-05T08:06:11+00:00"
+            "time": "2019-04-06T16:34:38+00:00"
         },
         {
             "name": "symfony/css-selector",
-            "version": "v4.2.4",
+            "version": "v4.2.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/css-selector.git",
@@ -1017,16 +791,16 @@
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.10.0",
+            "version": "v1.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "c79c051f5b3a46be09205c73b80b346e4153e494"
+                "reference": "fe5e94c604826c35a32fa832f35bd036b6799609"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/c79c051f5b3a46be09205c73b80b346e4153e494",
-                "reference": "c79c051f5b3a46be09205c73b80b346e4153e494",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/fe5e94c604826c35a32fa832f35bd036b6799609",
+                "reference": "fe5e94c604826c35a32fa832f35bd036b6799609",
                 "shasum": ""
             },
             "require": {
@@ -1038,7 +812,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.9-dev"
+                    "dev-master": "1.11-dev"
                 }
             },
             "autoload": {
@@ -1072,20 +846,20 @@
                 "portable",
                 "shim"
             ],
-            "time": "2018-09-21T13:07:52+00:00"
+            "time": "2019-02-06T07:57:58+00:00"
         },
         {
             "name": "twig/twig",
-            "version": "v2.7.4",
+            "version": "v2.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "ed9c49220e09bfaeb1ba4d48077c08a7b09908dd"
+                "reference": "5240e21982885b76629552d83b4ebb6d41ccde6b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/ed9c49220e09bfaeb1ba4d48077c08a7b09908dd",
-                "reference": "ed9c49220e09bfaeb1ba4d48077c08a7b09908dd",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/5240e21982885b76629552d83b4ebb6d41ccde6b",
+                "reference": "5240e21982885b76629552d83b4ebb6d41ccde6b",
                 "shasum": ""
             },
             "require": {
@@ -1101,7 +875,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.7-dev"
+                    "dev-master": "2.10-dev"
                 }
             },
             "autoload": {
@@ -1139,62 +913,20 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2019-03-23T14:28:58+00:00"
-        },
-        {
-            "name": "vanderlee/php-sentence",
-            "version": "1.0.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/vanderlee/php-sentence.git",
-                "reference": "fb201102977b2bda93ec49896ff52f97d5fe92a5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/vanderlee/php-sentence/zipball/fb201102977b2bda93ec49896ff52f97d5fe92a5",
-                "reference": "fb201102977b2bda93ec49896ff52f97d5fe92a5",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^3.6.12"
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "classes/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Simple text sentence splitting and counting. Supports atleast english, german and dutch, possibly more.",
-            "homepage": "https://github.com/vanderlee/php-sentence.git",
-            "keywords": [
-                "boundary",
-                "count",
-                "disambiguation",
-                "segmentation",
-                "sentence",
-                "split"
-            ],
-            "time": "2017-10-14T07:14:42+00:00"
+            "time": "2019-05-14T12:03:52+00:00"
         },
         {
             "name": "voku/simple_html_dom",
-            "version": "4.3.3",
+            "version": "4.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/voku/simple_html_dom.git",
-                "reference": "3084547002a84268033f2a1d1414c8cde0c388d7"
+                "reference": "ebc63c36dc75a350c390b51f0fc134daa469adda"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/simple_html_dom/zipball/3084547002a84268033f2a1d1414c8cde0c388d7",
-                "reference": "3084547002a84268033f2a1d1414c8cde0c388d7",
+                "url": "https://api.github.com/repos/voku/simple_html_dom/zipball/ebc63c36dc75a350c390b51f0fc134daa469adda",
+                "reference": "ebc63c36dc75a350c390b51f0fc134daa469adda",
                 "shasum": ""
             },
             "require": {
@@ -1240,185 +972,7 @@
                 "dom",
                 "php dom"
             ],
-            "time": "2019-03-04T08:10:15+00:00"
-        },
-        {
-            "name": "wamania/php-stemmer",
-            "version": "1.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/wamania/php-stemmer.git",
-                "reference": "6cc76829bddd46f7ae7678e0bf87a0c872c8cf58"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/wamania/php-stemmer/zipball/6cc76829bddd46f7ae7678e0bf87a0c872c8cf58",
-                "reference": "6cc76829bddd46f7ae7678e0bf87a0c872c8cf58",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^4.8"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Wamania\\Snowball\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Wamania",
-                    "homepage": "http://wamania.com"
-                }
-            ],
-            "description": "Native PHP5 Stemmer",
-            "keywords": [
-                "php",
-                "porter",
-                "stemmer"
-            ],
-            "time": "2017-01-27T17:16:44+00:00"
-        },
-        {
-            "name": "yooper/nicknames",
-            "version": "v1.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/yooper/nicknames.git",
-                "reference": "7daf7eab54e1c94baa4c1aa18a9158759dbd66fb"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/yooper/nicknames/zipball/7daf7eab54e1c94baa4c1aa18a9158759dbd66fb",
-                "reference": "7daf7eab54e1c94baa4c1aa18a9158759dbd66fb",
-                "shasum": ""
-            },
-            "require-dev": {
-                "phpunit/phpunit": "6.0.*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Yooper\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Dan Cardin",
-                    "email": "dcardin2007@gmail.com"
-                }
-            ],
-            "description": "Give a name and get back a list of nick names",
-            "time": "2017-11-09T18:48:35+00:00"
-        },
-        {
-            "name": "yooper/php-text-analysis",
-            "version": "1.4.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/yooper/php-text-analysis.git",
-                "reference": "a0332ed4ed76bcd9fe280f82f519fa9ce8ab20c4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/yooper/php-text-analysis/zipball/a0332ed4ed76bcd9fe280f82f519fa9ce8ab20c4",
-                "reference": "a0332ed4ed76bcd9fe280f82f519fa9ce8ab20c4",
-                "shasum": ""
-            },
-            "require": {
-                "camspiers/porter-stemmer": "~1",
-                "php": ">=7",
-                "symfony/console": "~2.7|~3.4|~4.0",
-                "vanderlee/php-sentence": "^1.0",
-                "wamania/php-stemmer": "~1",
-                "yooper/nicknames": "~1",
-                "yooper/stop-words": "~1"
-            },
-            "require-dev": {
-                "mockery/mockery": "~1.0",
-                "phpunit/phpunit": "~5"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.3.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "TextAnalysis\\": "src/"
-                },
-                "files": [
-                    "src/helpers/storage.php",
-                    "src/helpers/print.php",
-                    "src/helpers/simplified.php",
-                    "src/helpers/helpers.php",
-                    "src/helpers/interactive_help.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "yooper",
-                    "email": "dcardin2007@gmail.com"
-                }
-            ],
-            "description": "PHP Text Analysis is a library for performing Information Retrieval (IR) and Natural Language Processing (NLP) tasks using the PHP language",
-            "keywords": [
-                "ir",
-                "natural language processing",
-                "nlp",
-                "text analysis",
-                "text classification"
-            ],
-            "time": "2019-03-04T20:51:32+00:00"
-        },
-        {
-            "name": "yooper/stop-words",
-            "version": "v1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/yooper/stop-words.git",
-                "reference": "94cd72a477193171611e373b9c2b5744cd349155"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/yooper/stop-words/zipball/94cd72a477193171611e373b9c2b5744cd349155",
-                "reference": "94cd72a477193171611e373b9c2b5744cd349155",
-                "shasum": ""
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "src/StopWordFactory.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache2"
-            ],
-            "authors": [
-                {
-                    "name": "yooper",
-                    "email": "dcardin2007@gmail.com"
-                }
-            ],
-            "description": "Stop words ",
-            "time": "2017-10-19T17:41:39+00:00"
+            "time": "2019-05-20T07:56:13+00:00"
         }
     ],
     "packages-dev": [],
